@@ -1,0 +1,33 @@
+/* Navigation.css */
+
+.navbar {
+  background-color: transparent;
+  width: 250px;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navbar li {
+  padding: 10px 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff; /* Колір тексту посилань */
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #555; /* Колір фону посилань при наведенні */
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.7);
+}

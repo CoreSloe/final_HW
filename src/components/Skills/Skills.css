@@ -1,0 +1,95 @@
+/* Skills.css */
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.skills-title {
+  animation: slideInFromTop 1s ease-out;
+}
+
+.fade-appear,
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-appear-active,
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 800ms ease-in;
+}
+
+.skills-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(21, 21, 21, 0.6);
+  transition: background-color 0.5s ease;
+  transition: margin-top 0.5s ease;
+}
+
+.skills-container:hover {
+  background-color: #512c5aac;
+  margin-top: 10px;
+}
+
+.skills-container li {
+  margin-left: 20px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  color: #c8bbcd;
+}
+
+.skills-title {
+  text-align: left;
+  font-size: 52px;
+  color: #ebebeb;
+  margin-bottom: 30px;
+}
+
+.skills-title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  background-color: #7c13ef;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.skills-item {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.vertical-line {
+  position: absolute;
+  top: 0;
+  left: 95%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 2px;
+  background: rgb(255 255 255);
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}

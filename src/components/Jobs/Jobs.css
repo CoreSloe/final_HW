@@ -1,0 +1,116 @@
+/* Jobs.css */
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.jobs-title {
+  animation: slideInFromTop 1s ease-out;
+}
+
+body {
+  background-image: url("https://mh-2-rest.panthermedia.net/media/no-wm/a742bd26c245c1dca938396bc569de22bcd57e49/0030000000/30656000/30656064_detail_high.jpg?expires=1697147999"); /* Замініть на ваше фонове зображення */
+  background-size: cover;
+  background-position: center;
+  font-family: "Bruno Ace SC", cursive;
+}
+
+.fade-appear,
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-appear-active,
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 800ms ease-in;
+}
+
+.jobs-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(21, 21, 21, 0.6);
+  transition: background-color 0.5s ease;
+  transition: margin-top 0.5s ease;
+}
+
+.jobs-container:hover {
+  background-color: #512c5aac; /* Новий колір фону при наведенні на блок */
+  margin-top: 10px; /* Нове положення блоків при наведенні на блок */
+}
+
+.jobs-title {
+  text-align: left;
+  font-size: 52px;
+  color: #ebebeb;
+  margin-bottom: 30px;
+}
+
+.jobs-title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  background-color: #7c13ef;
+}
+
+.job {
+  margin-bottom: 40px;
+}
+
+.job h2 {
+  text-align: left;
+  font-size: 24px;
+  color: #7c13ef;
+}
+
+.job strong {
+  color: #7c13ef;
+}
+
+.job h3 {
+  text-align: left;
+  font-size: 24px;
+  color: #7c13ef;
+}
+
+.job ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.job li {
+  margin-left: 20px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  color: #c8bbcd;
+}
+
+.vertical-line {
+  position: absolute;
+  top: 0;
+  left: 95%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 2px;
+  background: rgb(255 255 255);
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
